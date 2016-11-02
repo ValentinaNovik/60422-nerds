@@ -6,7 +6,10 @@
         </head>
         <body>
             <header class="main-header">
-                <div class="container">
+              <div class="container">
+                  <div class="logo">
+                      <img src="logo.png" width="161" height="65" alt="nёrd's">
+                  </div>
                     <nav class="main-navigation">
                         <ul>
                             <li>
@@ -28,15 +31,15 @@
                     </nav>
                     <div class="menu-item">
                         <img src="basket-icon.png" width="15" height="15" alt="basket">
-                        <a class="login" href="#">Корзина</a> 
+                        <a class="login" href="#">Корзина</a>
                     </div>
-                </div>
+              </div>
                 <h1> Магазин готовых шаблонов</h1>
-            </header> 
-            <main class="container">  
+            </header>
+            <main class="container">
                 <div class="index-content-left">
                     <b class="index-content-title">Сетка:</b>
-                    <div class="producers-item">
+                 <div class="producers-item">
                         <form action="selection">
                             <input type="submit" name="choice" id="field-a" value="X">
                             <label for="field-a"> Адаптивная </label><br/>
@@ -44,12 +47,9 @@
                             <label for="field-f"> Фиксированная </label><br/>
                             <input type="submit" name="choice" id="field-r" value="">
                             <label for="field-r"> Резиновая </label> <br/>
-                        </form>
-                    </div>
-                    <div class="index-content-left">
-                        <b class="index-content-title">Особенности: </b>
-                        <div class="products-item">
-                            <form action="selection">
+                         <div class="index-content-left">
+                         <b class="index-content-title">Особенности: </b>
+                            <div class="products-item">
                                 <input type="submit" name="choice" id="field1" value="X">
                                 <label for="field1"> Слайдер </label> <br/>
                                 <input type="submit" name="choice" id="field2" value="">
@@ -60,14 +60,22 @@
                                 <label for="field4"> Галерея </label> <br/>
                                 <input type="submit" name="choice" id="field5" value="">
                                 <label for="field5"> Корзина </label> <br/>
-                            </form>
-                            <div>
-                                <a class="btn" href="#"> Показать </a>
                             </div>
                         </div>
+                            </form>
                     </div>
+                            <div>
+                                <form action="select">
+                                    <input type="submit" value="Показать">
+                                </form>
+                            </div>
+                </div>
                     <div class="card">
                         <img class="card-image" src="sedona.jpg" width="360" height="616" alt="sedona">
+                    <div>
+                        <b class="card-name">SEDONA</b>
+                          <p>Информационный сайт для туристов</p>
+                    </div>
                     </div>
                     <div class="card">
                         <img class="card-image" src="pink.jpg" width="360" height="616" alt="pink">
@@ -84,8 +92,7 @@
                     <div class="card">
                         <img class="card-image" src="kvas.jpg" width="360" height="616" alt="kvas">
                     </div>
-                </div>   
-            </main>  
+            </main>
             <div>
                 <ul class="pagination">
                     <li>
