@@ -3,14 +3,14 @@
     <head>
       <meta charset="utf-8">
         <title>Nёrd's</title>
-          <link rel="style" href="style.css">
+          <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
-            <div class="container">
+            <div class="container clearfix">
                 <div class="logo">
+                <nav class="menu">
                     <img src="logo.png" width="161" height="65" alt="nёrd's">
-                <nav class="main-navigation">
                     <ul>
                         <li class="menu-item">
                             <a href="#">Студия</a>
@@ -36,43 +36,49 @@
         </header>
         <main class="container">
             <div class="index-content-left">
+              <b class="index-content-title">Стоимость:</b>
+              <div class="price-item">
+                      <input type="range" min="0" max="15000" step="1" value="10000">
+                <div class="index-content-left">
                 <b class="index-content-title">Сетка:</b>
-                <div class="producers-item">
+                  <div class="producers-item">
                     <form action="selection">
                         <input type="radio" name="choice" id="field-a" checked>
-                        <label for="field-a"> Адаптивная </label><br/>
+                        <label for="field-a">Адаптивная</label><br/>
                         <input type="radio" name="choice" id="field-f">
-                        <label for="field-f"> Фиксированная </label><br/>
+                        <label for="field-f">Фиксированная</label><br/>
                         <input type="radio" name="choice" id="field-r">
-                        <label for="field-r"> Резиновая </label> <br/>
+                        <label for="field-r">Резиновая</label> <br/>
                       <div class="index-content-left">
                        <b class="index-content-title">Особенности: </b>
                         <div class="products-item">
                                 <input type="checkbox" name="choice" id="field1" checked>
-                                <label for="field1"> Слайдер </label> <br/>
+                                <label for="field1">Слайдер</label> <br/>
                                 <input type="checkbox" name="choice" id="field2">
-                                <label for="field2"> Блок преимуществ </label> <br/>
+                                <label for="field2">Блок преимуществ</label> <br/>
                                 <input type="checkbox" name="choice" id="field3" checked>
-                                <label for="field3"> Новости </label><br/>
+                                <label for="field3">Новости</label><br/>
                                 <input type="checkbox" name="choice" id="field4">
-                                <label for="field4"> Галерея </label> <br/>
+                                <label for="field4">Галерея</label> <br/>
                                 <input type="checkbox" name="choice" id="field5">
-                                <label for="field5"> Корзина </label> <br/>
+                                <label for="field5">Корзина</label> <br/>
                         </div>
                       </div>
-                    </form>
-                  </div>
+                     </form>
+                    </div>
+                 </div>
                         <div>
                             <form action="select">
                                 <input type="submit" value="Показать">
                             </form>
                         </div>
+              </div>
             </div>
                     <div class="card">
                         <img class="card-image" src="sedona.jpg" width="360" height="616" alt="sedona">
                     <div>
                         <b class="card-name">SEDONA</b>
-                          <p><a href="#"><img class="card-image" src="sedona.jpg" width="360" height="616" alt="sedona">Информационный сайт для туристов</p>
+                        <p><a href="#"><img class="card-image" src="sedona.jpg" width="360" height="616" alt="sedona"></a>Информационный сайт для туристов</p>
                     </div>
                     </div>
                     <div class="card">
@@ -92,6 +98,7 @@
                     </div>
             </main>
             <div>
+              <nav class="pages">
                 <ul class="pagination">
                     <li>
                         <a class="btn" href="#">1</a>
@@ -103,26 +110,27 @@
                         <a class="btn" href="#">3</a>
                     </li>
                     <li>
-                        <a class="btn" href="#">4</a>
+                        <a class="btn" href="#">СЛЕДУЮЩАЯ</a>
                     </li>
                 </ul>
+              </nav>
             </div>
-            <div class="map">
+            <div class="map clearfix">
                 <div class="map-canvas">
                     <img src="map-marker.jpg" width="1440" height="416" alt="map">
                     <div class="map-content">
                         <b class="index-content-title">Nёrds design studio</b>
                         <p>
                             191186, Санкт-Петербург,<br>
-                            ул.Б. Конюшенная, д. 19/8<br> 
+                            ул.Б. Конюшенная, д. 19/8<br>
                             Телефон: +7 (812) 275-75-75
                         </p>
-                        <a class="btn" href="#"> Напишите нам </a> 
+                        <a class="btn" href="#"> Напишите нам </a>
                     </div>
                 </div>
             </div>
         <footer class="main-footer">
-            <div class="container">
+            <div class="container clearfix">
               <section class="footer-social">
                 <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
                 <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
