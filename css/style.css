@@ -22,8 +22,10 @@ body {
   clear: both;
 }
 
-.header{
+header{
   background-color: #eeeeee;
+  height: 360px;
+  margin-bottom: 60px;
 }
 
 .container {
@@ -35,6 +37,7 @@ body {
 .logo {
   float: left;
   width: 300px;
+  margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -42,14 +45,44 @@ body {
 .menu {
   float: left;
   width: 640px;
-  vertical-aline: top;
 }
 
 .menu-item {
   float: right;
   width: 100px;
   list-style: none;
+}
+
+.menu-item ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.menu-item li{
+  display: inline-block;
+  vertical-aline: top;
+  font-size: 16px;
+  list-style: none;
+  line-height: 30px;
+}
+
+.menu-item a {
+  display: block;
   text-decoration: none;
+  list-style: none;
+  color: #000000;
+}
+
+.features-item b, p{
+  background-color: #eeeeee;
+}
+
+h1{
+  float: top;
+  vertical-aligh: middle;
+  font-size: 55px;
 }
 
 .features-item {
@@ -104,27 +137,59 @@ body {
   margin-right: 0;
 }
 
-.index-content-left .card{
+.index-content-left {
   float: left;
-  width: 360px;
+  width: 260px;
+  margin: 20px;
+}
+
+.index-content-right {
+  float: right;
+  width: 860px;
+  margin: 20px;
+  font-size: 0;
+}
+
+.index-content-title{
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.producers-item{
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card {
+  font-size: 16px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
   margin: 40px;
 }
 
-.card:last-child (2n) {
+.card:nth-child(2n+2) {
   margin-right: 0;
 }
 
-.pagination {
-  display: inline-block;
+.pagination li{
+  display: inline;
   width: 440px;
-  margin: 60px 310px 60px 400px;
+  margin: auto;
   vertical-aligh: top;
+}
+.pagination a{
+  text-decoration: none;
+  list-style: none;
+  color: #000000;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .map-content {
   width: 320px;
   height: 310px;
-  background-color: #ffffff;
+  background: url(img/map-marker.png);
 }
 
 .main-footer {

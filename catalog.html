@@ -34,49 +34,46 @@
             </div>
             <h1> Магазин готовых шаблонов</h1>
         </header>
-        <main class="container">
+        <main class="container clearfix">
             <div class="index-content-left">
-              <b class="index-content-title">Стоимость:</b>
-              <div class="price-item">
-                      <input type="range" min="0" max="15000" step="1" value="10000">
-                <div class="index-content-left">
-                <b class="index-content-title">Сетка:</b>
+              <form action="selection">
+                  <b class="index-content-title">Стоимость:</b>
+                  <div class="price-item">
+                          <input type="range" min="0" max="15000" step="1" value="10000">
+                  </div>
+                  <b class="index-content-title">Сетка:</b>
                   <div class="producers-item">
-                    <form action="selection">
-                        <input type="radio" name="choice" id="field-a" checked>
-                        <label for="field-a">Адаптивная</label><br/>
-                        <input type="radio" name="choice" id="field-f">
-                        <label for="field-f">Фиксированная</label><br/>
-                        <input type="radio" name="choice" id="field-r">
-                        <label for="field-r">Резиновая</label> <br/>
-                      <div class="index-content-left">
-                       <b class="index-content-title">Особенности: </b>
-                        <div class="products-item">
-                                <input type="checkbox" name="choice" id="field1" checked>
-                                <label for="field1">Слайдер</label> <br/>
-                                <input type="checkbox" name="choice" id="field2">
-                                <label for="field2">Блок преимуществ</label> <br/>
-                                <input type="checkbox" name="choice" id="field3" checked>
-                                <label for="field3">Новости</label><br/>
-                                <input type="checkbox" name="choice" id="field4">
-                                <label for="field4">Галерея</label> <br/>
-                                <input type="checkbox" name="choice" id="field5">
-                                <label for="field5">Корзина</label> <br/>
-                        </div>
-                      </div>
-                     </form>
-                    </div>
-                 </div>
-                        <div>
-                            <form action="select">
-                                <input type="submit" value="Показать">
-                            </form>
-                        </div>
-              </div>
+                            <input type="radio" name="choice" id="field-a" checked>
+                            <label for="field-a">Адаптивная</label><br/>
+                            <input type="radio" name="choice" id="field-f">
+                            <label for="field-f">Фиксированная</label><br/>
+                            <input type="radio" name="choice" id="field-r">
+                            <label for="field-r">Резиновая</label> <br/>
+                  </div>
+                  <b class="index-content-title">Особенности:</b>
+                  <div class="products-item">
+                                    <input type="checkbox" name="choice" id="field1" checked>
+                                    <label for="field1">Слайдер</label> <br/>
+                                    <input type="checkbox" name="choice" id="field2">
+                                    <label for="field2">Блок преимуществ</label> <br/>
+                                    <input type="checkbox" name="choice" id="field3" checked>
+                                    <label for="field3">Новости</label><br/>
+                                    <input type="checkbox" name="choice" id="field4">
+                                    <label for="field4">Галерея</label> <br/>
+                                    <input type="checkbox" name="choice" id="field5">
+                                    <label for="field5">Корзина</label> <br/>
+                  </div>
+                  <input type="submit" value="Показать">
+              </form>
             </div>
+                  <div class="index-content-right"
                     <div class="card">
+                        <img class="card-image" src="img/sedona.jpg" width="360" height="616" alt="sedona">
+                        <div class="card-content">
                         <b class="card-name">SEDONA</b>
-                        <p><a href="#"><img class="card-image" src="img/sedona.jpg" width="360" height="616" alt="sedona"></a>Информационный сайт для туристов</p>
+                        <p>Информационный сайт для туристов</p>
+                        <a href="#">9900 р.</a>
+                        </div>
                     </div>
                     <div class="card">
                         <img class="card-image" src="img/pink.jpg" width="360" height="616" alt="pink">
@@ -93,28 +90,29 @@
                     <div class="card">
                         <img class="card-image" src="img/kvas.jpg" width="360" height="616" alt="kvas">
                     </div>
+                    <div class="pages">
+                    <nav class="other">
+                      <ul class="pagination">
+                      <li class="btn">
+                        <a href="#">1</a>
+                      </li>
+                      <li class="btn">
+                        <a href="#">2</a>
+                      </li>
+                      <li class="btn">
+                        <a href="#">3</a>
+                      </li>
+                      <li class="btn">
+                        <a href="#">СЛЕДУЮЩАЯ</a>
+                       </li>
+                       </ul>
+                    </nav>
+                    </div>
+                </div>
             </main>
-            <div>
-              <nav class="pages">
-                <ul class="pagination">
-                    <li>
-                        <a class="btn" href="#">1</a>
-                    </li>
-                    <li>
-                        <a class="btn" href="#">2</a>
-                    </li>
-                    <li>
-                        <a class="btn" href="#">3</a>
-                    </li>
-                    <li>
-                        <a class="btn" href="#">СЛЕДУЮЩАЯ</a>
-                    </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="map clearfix">
+            <div class="map">
+                <img src="img/map-marker.png" width="1200" height="416" alt="map">
                 <div class="map-canvas">
-                    <img src="img/map-marker.jpg" width="1440" height="416" alt="map">
                     <div class="map-content">
                         <b class="index-content-title">Nёrds design studio</b>
                         <p>
