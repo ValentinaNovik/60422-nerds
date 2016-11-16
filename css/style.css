@@ -9,10 +9,27 @@ body {
 body {
   background-color: #ffffff; 
   color: #000000; 
-  font-family: Myriad Pro Regular;
-  font-weight: regular sample;
+  font-family: "Roboto";
+  font-weight: 400;
   font-size:16px;
   line-height:18px;
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff") format("woff"),
+       url("../fonts/roboto.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "RobotoMedium";
+    src: url("../fonts/robotomedium.woff") format("woff"),
+       url("../fonts/robotomedium.woff2") format("woff2");
 }
 
 .clearfix::after {
@@ -35,11 +52,17 @@ header{
 }
 
 .logo {
+/*
   float: left;
   width: 300px;
   margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
+*/
+}
+
+.main-logo {
+    float: left;
 }
 
 .menu {
@@ -48,10 +71,26 @@ header{
 }
 
 .menu-item {
-  float: right;
+  float: left;
+    position: relative;
+  
   width: 100px;
   list-style: none;
 }
+
+.menu-caddy {
+    padding-top: 10px;
+}
+
+.menu-caddy::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    left: -20px;
+    background-image: url('../img/basket-icon.png');
+    background-repeat: no-repeat;
+  }
 
 .menu-item ul{
   margin: 0;
@@ -62,7 +101,7 @@ header{
 
 .menu-item li{
   display: inline-block;
-  vertical-aline: top;
+/*  vertical-aline: top;*/
   font-size: 16px;
   list-style: none;
   line-height: 30px;
@@ -79,9 +118,11 @@ header{
   background-color: #eeeeee;
 }
 
-h1{
-  float: top;
-  vertical-aligh: middle;
+.page-title {
+    padding-left: 50px;
+}
+
+.page-title h1 {
   font-size: 55px;
 }
 
@@ -189,7 +230,7 @@ h1{
 .map-content {
   width: 320px;
   height: 310px;
-  background: url(img/map-marker.png);
+  background: url('../img/map-marker.png');
 }
 
 .main-footer {
@@ -206,6 +247,49 @@ h1{
 .footer-advantages {
   float: left;
   width: 540px;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 0 2px;
+  border-radius: 45px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  background: #e1e1e1 no-repeat center;
+}
+
+.social-btn:hover {
+  background-color: #e1e1e1;
+}
+
+.social-btn-vk {
+  background: #e1e1e1 url('../img/vk-icon.png') no-repeat center;
+  background-position: 9px -447px;
+}
+
+.social-btn-fb {
+  background: #e1e1e1 url('../img/fb-icon.png') no-repeat center;
+  background-position: 15px -171px;
+}
+
+.social-btn-inst {
+  background: #e1e1e1 url('../img/insta-icon.png') no-repeat center;
+  background-position: 12px -313px;
+}
+
+.social-btn-vk:hover {
+  background-position: 9px -381px;
+}
+
+.social-btn-fb:hover {
+  background-position: 15px -100px;
+}
+
+.social-btn-inst:hover {
+  background-position: 12px -242px;
 }
 
 b {
