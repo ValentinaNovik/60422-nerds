@@ -1,7 +1,7 @@
 html,
 body {
     min-width: 1440px;
-    min-height: 2475px;
+
     margin: 0;
     padding: 0;
 }
@@ -50,6 +50,7 @@ header{
 .container {
     width: 1160px;
     margin: 0 auto;
+    margin-bottom: 40px;
     padding: 0 20px;
 }
 
@@ -66,7 +67,7 @@ header{
 .main-logo {
     float: left;
     margin-top: 50px;
-    margin-bottom: 240px;
+
     margin-right: 200px;
 }
 
@@ -224,10 +225,16 @@ header{
 /*слайдер*/
 .slider{
     position:relative;
-    width:880px;
+    width:1160px;
     height:310px;
     margin:0 auto;
 }
+
+.slide input [type radio] {
+    position: absolute;
+    opasity: 0;
+}
+
 
 .slider-controls{
     position:absolute;
@@ -300,7 +307,6 @@ header{
     background-image:url("../img/mobiles-head.png");
     background-repeat:no-repeat;
     background-position:100% 10px;
-    margin-left: 150px;
 }
 
 .slide:nth-child(1){
@@ -325,6 +331,11 @@ header{
 /*тело*/
 
 /*ГЛАВНАЯ*/
+.elements{
+    margin-bottom:80px;
+    margin-top: 80px;
+}
+
 .elements-item {
     float: left;
     width: 360px;
@@ -335,30 +346,56 @@ header{
     margin-right: 0;
 }
 
-.about {
+/*.about {
     margin-right: 140px;
-}
+}*/
 
-.about-left +b {
+/*.about-left +b {
     /*font-family: "Roboto", "Arial", sans-serif;
     margin-right: 20px;
     margin-top: 75px;
     margin-bottom: 45px;*/
-    font-weight: 400;
+   /* font-weight: 400;
     font-size:45px;
     line-height:45px;
     float: left;
-    width: 660px;
+    width: 660px;*/
+}*/
 
+.about{
+    margin-top: 40px 0 76px;
+    
+}
+.about-left {
+    float: left;
+    width: 680px;
 }
 
 .about-right {
-    display: inline-block;
     float: right;
-    clear:both;
-    width: 460px;
+    width: 480px;
 }
 
+ul.ul {
+    list-style: none;
+    margin: :0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    margin: 50px 30px;
+    margin-top: 40px;
+}
+
+ul.ul li {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.features-name{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 /*.li span{
     float: left;
     position: relative;
@@ -369,9 +406,9 @@ header{
 
 .partners-item {
     display:inline-block;
-    float: left;
-    width: 260px;
-    margin-right: 40px;
+    width:auto;
+    margin-right: 95px;
+    vertical-align: middle;
 }
 
 .partners-item:last-child {
@@ -380,10 +417,9 @@ header{
 
 .elements-item .btn{
     display:block;
-    width:240px;
-    padding:30px 0;
-    margin-top:35px;
-    margin-bottom:80px;
+    width:160px;
+    padding:16px 45px;
+    margin-top:36px;
     font-size:16px;
     line-height: 18px;
     color:white;
@@ -403,10 +439,64 @@ header{
     background: #efc84a;
 }
 
+.element1,
+.element2,
+.element3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .item1,
 .item2,
 .item3 {
+    display: block;
+}
+
+.likes{
+    display: block;
+}
+
+.about-right b{
+    text-align:center;
+    font-size:16px;
+    line-height:24px;
+    margin-top: 35px;
+}
+
+.about-right li{
+    font-size:45px;
+    line-height:10,06px;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+.about-left b{
+    text-align:left;
+    font-size:45px;
+    line-height:45px;
     margin-top: 70px;
+    margin-bottom: 35px;
+}
+.about-left b1{
+    text-align:left;
+    font-size:16px;
+    line-height:24px;
+    margin-top: 45px;
+}
+
+.about-left p{
+    text-align:left;
+    font-size:16px;
+    line-height:24px;
+    margin-bottom: 16px;
+}
+
+.about-left li{
+    text-align:left;
+    font-size:16px;
+    line-height:24px;
+    margin-bottom: 50px;
+    list-style-type:square;
 }
 
 /*КОНЕЦ ГЛАВНОЙ*/
@@ -545,8 +635,11 @@ header{
 /*футер*/
 .map{
     margin-top: 80px;
-    width: auto;
-    min-height: 420px;
+    width: 100%;
+}
+
+. map-canvas{
+    position: relative;
 }
 
 .letter .btn {
@@ -567,22 +660,42 @@ header{
 .map-content {
     width: 320px;
     height: 310px;
-    background: #ffffff;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: auto;
-    margin-left: 20px;
+    position: absolute;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-630px,340%);
+    padding-top: 55px;
+    padding-left: 50px;
+}
+
+.map-content b{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.map-content p{
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .main-footer {
-    margin-top: 65px;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 70px;
+}
+
+strong{
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.footer-advantages p{
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .footer-social {
     float: left;
-    width: 300px;
+    width: 400px;
 }
 
 .footer-advantages {
@@ -608,30 +721,16 @@ header{
 
 .social-btn-vk {
     background: #e1e1e1 url("../img/vk-icon.png") no-repeat center;
-    background-position: 9px -447px;
 }
 
 .social-btn-fb {
     background: #e1e1e1 url("../img/fb-icon.png") no-repeat center;
-    background-position: 15px -171px;
 }
 
 .social-btn-inst {
     background: #e1e1e1 url("../img/insta-icon.png") no-repeat center;
-    background-position: 12px -313px;
 }
 
-.social-btn-vk:hover {
-    background-position: 9px -381px;
-}
-
-.social-btn-fb:hover {
-    background-position: 15px -100px;
-}
-
-.social-btn-inst:hover {
-    background-position: 12px -242px;
-}
 
 /*ОБЩЕЕ*/
 b {
