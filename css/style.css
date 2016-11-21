@@ -160,11 +160,6 @@ header{
 
 /*бегунок*/
 
-.range-filter {
-    width: 240px;
-    margin: 50px auto; /* для демонстрации */
-}
-
 .range-controls {
     position: relative;
     height: 41px;
@@ -174,7 +169,6 @@ header{
     margin-bottom: 15px;
     border-radius: 5px;
     background: #f1f1f1;
-    margin-left: 0;
 }
 
 .range-controls .scale {
@@ -183,7 +177,7 @@ header{
 }
 
 .range-controls .bar {
-    width: 90%;
+    width: 70%;
     height: 2px;
     background: #00ca74;
 }
@@ -206,11 +200,12 @@ header{
 }
 
 .range-controls .toggle-max {
-    left: 140px;
+    left: 155px;
 }
 
 .price-controls {
     font-size: 0;
+    margin-bottom: 140px;
 }
 
 .price-controls label {
@@ -226,9 +221,9 @@ header{
 .price-controls input {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
-    width: 60px;
+    width: 50px;
     margin-left: 10px;
-    padding: 8px 10px;
+    padding: 8px 20px;
     text-align: center;
     color: #283136;
     border: none;
@@ -367,7 +362,7 @@ header{
 }
 
 .about{
-    padding-bottom: 40px;
+    padding-bottom: 58px;
     border-bottom: 1px solid #eeeeee;
 }
 .about-left {
@@ -376,16 +371,17 @@ header{
     width: 660px;
 }
 
+
 .about-left .task{
     text-align:left;
     text-transform: uppercase;
     font-size:16px;
     line-height:24px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .about-left p{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .about-left span{
@@ -393,8 +389,7 @@ header{
     font-weight: 400;
     font-size:45px;
     line-height:45px;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 /*.elements-item span{
@@ -409,7 +404,7 @@ header{
     text-align:left;
     font-size:16px;
     line-height:24px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     list-style-type:square;
     text-decoration: none;
     list-style: none;
@@ -426,13 +421,15 @@ header{
 }
 
 .about-right {
-    margin-top: 70px;
+    margin-top: 35px;
     float: right;
     width: 460px;
     margin-right: 0;
 }
 .about-right b{
+    text-transform: uppercase;
     margin-left: 100px;
+    padding-left: 20px;
     font-size: 16px;
     line-height: 24px;
     left:0;
@@ -440,10 +437,11 @@ header{
 
 .about-right li{
     vertical-align: center;
-    font-size:45px;
-    line-height:10,06px;
-    margin-top: 30px;
-    margin-right: 25px;
+    font-size:16px;
+    line-height:18px;
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-left: 20px;
     left:0;
 }
 
@@ -458,6 +456,14 @@ ul .percent {
 }
 
 ul.percent li {
+    font-size: 45px;
+    line-height:10,06px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+}
+
+ul.percent li .level{
     font-size: 16px;
     line-height:18px;
     display: inline-block;
@@ -476,16 +482,16 @@ ul.percent li {
 }
 
 .partners{
-    padding-bottom: 45px;
-    padding-top: 40px;
+    padding-bottom: 43px;
+    padding-top: 50px;
     border-bottom: 1px solid #eeeeee;
 }
 
 .partners-item {
     display:inline-block;
     width:auto;
-    margin-right: 40px;
-    padding-left: 45px;
+    margin-right: 60px;
+    padding-left: 35px;
     vertical-align: middle;
 }
 
@@ -511,7 +517,7 @@ ul.percent li {
     background: #fb565a;
 }
 .element2 .btn{
-    background: #00ca74;
+    background: #fb565a;
 }
 .element3 .btn{
     background: #efc84a;
@@ -527,7 +533,7 @@ ul.percent li {
 .likes{
     display: block;
     text-align: right;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 /*КОНЕЦ ГЛАВНОЙ*/
@@ -543,24 +549,24 @@ ul.percent li {
 
 .index-content-right {
     float: right;
-    width: 860px;
+    width: 760px;
     font-size: 0;
 }
 
 .index-content-title {
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 18px;
     line-height: 18px;
 }
 
 .index-content-select li{
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 8px;
     padding-right: 10px;
 }
 
-.sorting li .gray{
+.index-content-select .gray{
     color: #d2d2d2;
 }
 
@@ -573,7 +579,8 @@ ul.percent li {
 .sorting span{
     float: left;
     margin-bottom: 80px;
-    margin-right: 290px;
+    margin-right: 270px;
+    padding-left: 100px;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
@@ -581,13 +588,12 @@ ul.percent li {
 
 .arrows{
     float: left;
-    margin-right: 10px;
-    padding-right: 10px;
+    margin-right: 15px;
 }
 
 .arrow{
     float: left;
-    margin-right: 20px;
+    margin-left: 20px;
     font-size: 0;
     display: block;
     width: 15px;
@@ -602,11 +608,21 @@ ul.percent li {
 }
 
 .producers-item {
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     vertical-align: middle;
     font-size: 16px;
     line-height: 20px;
 }
+
+/*.products-item {
+    margin-right: 4px;
+    padding-left: 8px;
+    vertical-align: middle;
+}
+
+.products-item label{
+    margin-bottom: 10px;
+}                                       отступы между строк в левом блоке*/
 
 .card {
     position: relative;
@@ -704,7 +720,7 @@ ul.percent li {
 
 .show .btn {
     display:block;
-    width:250px;
+    width:270px;
     padding:10px 0;
     margin-top:48px;
     font-size:16px;
@@ -770,7 +786,7 @@ ul.percent li {
 /*футер*/
 .map{
     position: relative;
-    margin-top: 80px;
+    margin-top: 83px;
     width: 100%;
     text-align: center;
 }
@@ -820,7 +836,7 @@ ul.percent li {
 }
 
 .main-footer {
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 strong{
@@ -838,9 +854,12 @@ strong{
     width: 400px;
 }
 
-.footer-advantages {
+.footer-advantages span {
     float: left;
-    width: 540px;
+    width: 740px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 10px;
 }
 
 .social-btn {
