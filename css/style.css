@@ -14,7 +14,7 @@ body {
     line-height:18px;
 }
 
-@font-face {
+/*@font-face {
     font-weight: normal;
     font-style: normal;
 
@@ -29,7 +29,7 @@ body {
     font-family: "RobotoMedium";
       src: url("../fonts/robotomedium.woff") format("woff"),
          url("../fonts/robotomedium.woff2") format("woff2");
-}
+}*/
 
 .clearfix::after {
     content: "";
@@ -42,14 +42,14 @@ body {
 
 header{
     background-color: #eeeeee;
-    min-height: 355px;
+    min-height: 545px;
     margin-bottom: 60px;
 }
 
 .container {
     width: 1160px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     padding: 0 20px;
 }
 
@@ -66,13 +66,13 @@ header{
 .main-logo {
     float: left;
     margin-top: 50px;
-    margin-right: 200px;
+    margin-right: 160px;
     background: none;
 }
 
 .menu {
     float: left;
-    width: 640px;
+    width: 680px;
 }
 
 .menu a::hover {
@@ -82,17 +82,25 @@ header{
 .menu-item {
     float: left;
     position: relative;
-    margin-top: 80px;
-    margin-right: 60px;
+    margin-top: 60px;
+    margin-right: 15px;
+    padding-right: 45px;
     list-style: none;
+    font-size: 16px;
+    line-height: 28px;
 }
 
-.menu-item.active a{
+.menu-item a{
+    text-transform: uppercase;
+}
+
+.menu-item .active a{
     border-bottom: 20px;
 }
 
 .menu-caddy {
-    padding-top: 10px;
+    padding-top: 15px;
+    padding-left: 20px;
 }
 
 .menu-caddy::before {
@@ -100,9 +108,11 @@ header{
     content: '';
     width: 20px;
     height: 20px;
-    left: -20px;
+    left: -10px;
+    top: 21px;
     background-image: url("../img/basket-icon.png");
     background-repeat: no-repeat;
+    padding-left: 40px;
   }
 
 .menu-item ul{
@@ -127,9 +137,9 @@ header{
     color: #000000;
 }
 
-.features-item b, p{
+/*.features-item b, p{
     background-color: #eeeeee;
-}
+}*/
 
 .page-title {
     padding-left: 50px;
@@ -164,6 +174,7 @@ header{
     margin-bottom: 15px;
     border-radius: 5px;
     background: #f1f1f1;
+    margin-left: 0;
 }
 
 .range-controls .scale {
@@ -266,6 +277,7 @@ header{
     height:100%;
     overflow:hidden;
     display: none;
+    padding-bottom: 30px;
 }
 
 .slide.active{
@@ -280,23 +292,32 @@ header{
     margin-right: 80px;
 }
 .slide-title{
-    font-size:36px;
+    font-size:55px;
+    line-height: 55px;
     line-height:1;
-    font-weight:bold;
+    font-weight:400;
     color:#000000;
     background-color: #eeeeee;
+    margin-bottom: 25px;
+}
+
+.slide-title p{
+    font-size:16px;
+    line-height:18px;
 }
 
 .slide p{
     background-color: #eeeeee;
+    margin-bottom: 40px;
 }
 
 .slide .btn{
     display:block;
     width:240px;
-    padding:10px 0;
+    padding:15px 0;
     margin-top:25px;
-    font-size:12px;
+    font-size:16px;
+    line-height:18px;
     color:white;
     text-transform:uppercase;
     text-align:center;
@@ -320,7 +341,7 @@ header{
 .elements{
     display: block;
     margin-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 88px;
     border-bottom: 1px solid #eeeeee;
 }
 
@@ -330,8 +351,19 @@ header{
     margin-right: 40px;
 }
 
+.elements-item span{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size:24px;
+    line-height:30px;
+}
+
 .elements-item:last-child {
     margin-right: 0;
+}
+
+.elements-item img {
+    margin-bottom: 22px;
 }
 
 .about{
@@ -344,26 +376,33 @@ header{
     width: 660px;
 }
 
-.about-left b{
+.about-left .task{
     text-align:left;
-    font-size:45px;
-    line-height:45px;
-    margin-top: 70px;
-    margin-bottom: 35px;
-}
-.about-left b1{
-    text-align:left;
+    text-transform: uppercase;
     font-size:16px;
     line-height:24px;
-    margin-top: 45px;
+    margin-bottom: 30px;
 }
 
 .about-left p{
-    text-align:left;
-    font-size:16px;
-    line-height:24px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
+
+.about-left span{
+    text-align:left;
+    font-weight: 400;
+    font-size:45px;
+    line-height:45px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+/*.elements-item span{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size:24px;
+    line-height:30px;
+}*/
 
 .about-left li{
     position: relative;
@@ -408,7 +447,7 @@ header{
     left:0;
 }
 
-ul.ul {
+ul .percent {
     list-style: none;
     margin: :0;
     padding: 0;
@@ -418,12 +457,17 @@ ul.ul {
     margin-top: 40px;
 }
 
-ul.ul li {
+ul.percent li {
     font-size: 16px;
     line-height:18px;
     display: inline-block;
     vertical-align: top;
     width: 100px;
+}
+
+.percent span:nth-child(1) {
+    display: block;
+    margin-bottom: 30px;
 }
 
 .features-name{
@@ -451,12 +495,12 @@ ul.ul li {
 
 .elements-item .btn{
     display:block;
-    width:160px;
-    padding:16px 45px;
-    margin-top:36px;
+    width:112px;
+    padding:16px 25px;
+    margin-top:32px;
     font-size:16px;
     line-height: 18px;
-    color:white;
+    color:#ffffff;
     text-transform:uppercase;
     text-align:center;
     text-decoration:none;
@@ -494,6 +538,7 @@ ul.ul li {
 .index-content-left {
     float: left;
     width: 260px;
+    margin-left: 40px;
 }
 
 .index-content-right {
@@ -503,11 +548,46 @@ ul.ul li {
 }
 
 .index-content-title {
-    display: block;
-    margin-left: 
+    display: inline-block;
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 30px;
+}
+
+.index-content-select li{
+    display: inline-block;
+}
+
+.index-content-select {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.sorting span{
+    float: left;
+    margin-bottom: 80px;
+    margin-right: 290px;
+}
+
+.arrows{
+    float: left;
+}
+
+.arrow{
+    float: left;
+    margin-right: 20px;
+    font-size: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/sort-down.png");
+    background-repeat: no-repeat;
+    background-position: 3px center;
+}
+
+.arrow-down{
+    background-image: url("../img/sort-up.png");
 }
 
 .producers-item {
@@ -540,8 +620,8 @@ ul.ul li {
     left: 0;
     right: 0;
     bottom:0;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     text-align: center;
     padding-left: 80px;
     padding-right: 80px;
@@ -551,20 +631,36 @@ ul.ul li {
 .card-content .btn {
     display:block;
     width: 160px;
-    padding: 20px;
-    margin-top:48px;
+    padding: 18px;
+    margin-top:15px;
+    margin-bottom: 20px;
     font-size:16px;
     color: #ffffff;
     text-transform:uppercase;
     text-align:center;
     text-decoration:none;
     border-radius:3px;
-    background: #e50000;
+    background: #fb565a;
 }
 
-.card .ul{
+.card-head{
     font-size: 0;
-    border-color: #eeeeee;
+    background-color: #eeeeee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-head li{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin:0 3px;
+    background:white;
+    border:3px solid white;
+    vertical-align:top;
+    border-radius:50%;
+    cursor:pointer;
+    text-decoration:none;
 }
 
 .card-name p{
@@ -572,15 +668,6 @@ ul.ul li {
     color: #aeaeae;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-.card .ul .li{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    margin-right: 10px;
 }
 
 .pagination{
@@ -604,7 +691,7 @@ ul.ul li {
 
 .show .btn {
     display:block;
-    width:260px;
+    width:250px;
     padding:10px 0;
     margin-top:48px;
     font-size:16px;
@@ -774,16 +861,15 @@ strong{
 /*ОБЩЕЕ*/
 b {
     color: #000000;
-    font-family: "Roboto";
+    font-family: "Roboto", "Arial", sans-serif;
     font-size:24px;
     line-height:30px;
     margin-bottom: 25px;
 }
 
 p {
-    background-color: #ffffff;
     color: #000000;
-    font-family: "Roboto";
+    font-family: "Roboto", "Arial", sans-serif;
     font-size:16px;
     line-height:24px;
 }

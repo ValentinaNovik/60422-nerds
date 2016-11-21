@@ -38,7 +38,7 @@
         <main class="container clearfix">
             <div class="index-content-left">
               <form action="selection">
-                <b class="index-content-title">СТОИМОСТЬ:</b>
+                <span class="index-content-title">СТОИМОСТЬ:</span>
                 <div class="range-filter">
                    <div class="range-controls">
                       <div class="scale">
@@ -52,7 +52,7 @@
                       <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
                    </div>
                 </div>
-                  <b class="index-content-title">СЕТКА:</b>
+                  <span class="index-content-title">СЕТКА:</span>
                   <div class="producers-item">
                             <input type="radio" name="choice" id="field-a" checked>
                             <label for="field-a">Адаптивная</label><br/>
@@ -61,7 +61,7 @@
                             <input type="radio" name="choice" id="field-r">
                             <label for="field-r">Резиновая</label> <br/>
                   </div>
-                  <b class="index-content-title">ОСОБЕННОСТИ:</b>
+                  <span class="index-content-title">ОСОБЕННОСТИ:</span>
                   <div class="products-item">
                                     <input type="checkbox" name="choice" id="field1" checked>
                                     <label for="field1">Слайдер</label> <br/>
@@ -79,21 +79,28 @@
                   </div>
               </form>
             </div>
-                  <div>
-                      <ul class="index-content-title">СОРТИРОВАТЬ:
-            <li>ПО ЦЕНЕ</li>   <li>ПО ТИПУ</li>  <li>ПО</li>
+                  <div class="sorting">
+                    <span>СОРТИРОВАТЬ:</span>
+                      <ul class="index-content-select">
+                         <li>ПО ЦЕНЕ</li>
+                         <li>ПО ТИПУ</li>
+                         <li>ПО НАЗВАНИЮ</li>
                      </ul>
+                     <div class="arrows">
+                      <a class="arrow-up arrow" href="#">вверх</a>
+                      <a class="arrow-down arrow" href="#">вниз</a>
+                      </div>
                   </div>
                   <div class="index-content-right">
                     <div class="card">
-                        <ul>
+                        <ul class="card-head">
                         <li></li>
                         <li></li>
                         <li></li>
                         </ul>
                         <img class="card-image" src="img/sedona.jpg" width="360" height="616" alt="sedona">
                         <div class="card-content">
-                        <b class="card-name">SEDONA</b>
+                        <span class="card-name">SEDONA</span>
                         <p>Информационный сайт для туристов</p>
                         <a class="btn" href="#">9900 р.</a>
                         </div>
@@ -105,7 +112,7 @@
                         <img class="card-image" src="img/borodinski.jpg" width="360" height="616" alt="borodinski">
                     </div>
                     <div class="card">
-                        <img class="card-image" src="img/browser.jpg" width="360" height="616" alt="browser">
+                        <img class="card-image" src="img/mishka.jpg" width="360" height="616" alt="browser">
                     </div>
                     <div class="card">
                         <img class="card-image" src="img/alpus.jpg" width="360" height="616" alt="alpus">
@@ -116,7 +123,7 @@
                       <ul class="pagination">
                       <li class="btn1">
                         <a href="#">1</a>
-                      </li>
+                          </li>
                       <li class="btn2">
                         <a href="#">2</a>
                       </li>
@@ -130,7 +137,7 @@
                 </div>
             </main>
             <div class="map">
-                <img src="img/map-marker.png" width="1200" height="416" alt="map">
+                <img src="img/map-marker.png" width="1440" height="416" alt="map">
                 <div class="map-canvas">
                     <div class="map-content">
                         <b class="index-content-title">Nёrds design studio</b>
