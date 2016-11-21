@@ -549,13 +549,19 @@ ul.percent li {
 
 .index-content-title {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 18px;
 }
 
 .index-content-select li{
     display: inline-block;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.sorting li .gray{
+    color: #d2d2d2;
 }
 
 .index-content-select {
@@ -568,10 +574,15 @@ ul.percent li {
     float: left;
     margin-bottom: 80px;
     margin-right: 290px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
 }
 
 .arrows{
     float: left;
+    margin-right: 10px;
+    padding-right: 10px;
 }
 
 .arrow{
@@ -648,15 +659,17 @@ ul.percent li {
     background-color: #eeeeee;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 .card-head li{
     display:inline-block;
     width:10px;
     height:10px;
-    margin:0 3px;
+    margin:0 4px;
     background:white;
-    border:3px solid white;
+    border:4px solid white;
     vertical-align:top;
     border-radius:50%;
     cursor:pointer;
@@ -695,7 +708,7 @@ ul.percent li {
     padding:10px 0;
     margin-top:48px;
     font-size:16px;
-    color:white;
+    color:#000000;
     text-transform:uppercase;
     text-align:center;
     text-decoration:none;
