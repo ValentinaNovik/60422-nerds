@@ -14,23 +14,6 @@ body {
     line-height: 18px;
 }
 
-/*@font-face {
-    font-weight: normal;
-    font-style: normal;
-
-    font-family: "Roboto";
-      src: url("../fonts/roboto.woff") format("woff"),
-         url("../fonts/roboto.woff2") format("woff2");
-}
-
-@font-face {
-    font-weight: normal;
-    font-style: normal;
-    font-family: "RobotoMedium";
-      src: url("../fonts/robotomedium.woff") format("woff"),
-         url("../fonts/robotomedium.woff2") format("woff2");
-}*/
-
 .clearfix::after {
     content: "";
 
@@ -53,28 +36,30 @@ header{
 }
 
 .logo {
-/*
-  float: left;
-  width: 300px;
-  margin-top: 50px;
-  margin-right: auto;
-  margin-left: auto;
-*/
+    float: left;
+    width: 300px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .main-logo {
     float: left;
     margin-top: 50px;
-    margin-right: 160px;
+    margin-right: 150px;
     background: none;
 }
+
+/*.main-logo:hover {
+    background-image: url("../img/logo-hvr.png");
+}*/
 
 .menu {
     float: left;
     width: 680px;
 }
 
-.menu a::hover {
+.menu a:hover {
    color: #fb565a;
 }
 
@@ -82,8 +67,8 @@ header{
     float: left;
     position: relative;
     margin-top: 60px;
-    margin-right: 15px;
-    padding-right: 45px;
+    margin-right: 30px;
+    padding-right: 20px;
     list-style: none;
     font-size: 16px;
     line-height: 28px;
@@ -93,8 +78,14 @@ header{
     text-transform: uppercase;
 }
 
+.menu-item a:hover {
+    color: #fb565a;
+}
+
 .menu-item .active a {
-    border-bottom: 20px;
+    position: relative;
+    border-bottom: 2px solid #fb565a;
+    width: auto;
 }
 
 .menu-caddy {
@@ -107,11 +98,11 @@ header{
     content: '';
     width: 20px;
     height: 20px;
-    left: -10px;
+    left: -30px;
     top: 21px;
     background-image: url("../img/basket-icon.png");
     background-repeat: no-repeat;
-    padding-left: 40px;
+    margin-left: 10px;
   }
 
 .menu-item ul {
@@ -158,6 +149,15 @@ header{
 
 .main-header {
     margin-bottom: 80px;
+}
+
+.main-header-inner {
+    margin-bottom: 58px;
+    min-height: 0;
+    padding-bottom: 109px;
+    font-weight: 400;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 /*бегунок*/
@@ -324,6 +324,10 @@ header{
     border-radius: 3px;
 }
 
+.slide .btn:hover {
+    background: #e74246;
+}
+
 .slide:nth-child(1) {
     background-image: url("../img/mobiles-head.png");
     background-repeat: no-repeat;
@@ -351,7 +355,7 @@ header{
 
 .elements-item span {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 300px;
     font-size: 24px;
     line-height: 30px;
 }
@@ -361,7 +365,7 @@ header{
 }
 
 .elements-item img {
-    margin-bottom: 22px;
+    margin-bottom: 23px;
 }
 
 .about{
@@ -394,6 +398,7 @@ header{
     font-size: 45px;
     line-height: 45px;
     margin-bottom: 30px;
+    font-weight: 500;
 }
 
 .about-left li {
@@ -450,15 +455,18 @@ ul .percent {
     font-size: 0;
     text-align: right;
     margin: 50px 30px;
-    margin-top: 30px;
+    margin-top: 26px;
 }
 
 ul.percent li {
+    text-align: left;
     font-size: 45px;
-    line-height: 10,06px;
+    line-height: 17px;
     display: inline-block;
     vertical-align: top;
-    width: 100px;
+    width: 110px;
+    margin-right: 10px;
+    margin-top: 25px;
 }
 
 ul.percent li .level {
@@ -485,7 +493,7 @@ ul.percent li .level {
 
 .partners {
     padding-bottom: 43px;
-    padding-top: 50px;
+    padding-top: 48px;
     border-bottom: 1px solid #eeeeee;
 }
 
@@ -501,9 +509,9 @@ ul.percent li .level {
     margin-right: 0;
 }
 
-.btn {
+.site-btn {
     display: block;
-    width: 112px;
+    width: 110px;
     padding: 16px 25px;
     margin-top: 32px;
     font-size: 16px;
@@ -526,6 +534,18 @@ ul.percent li .level {
 
 .btn-yellow {
     background: #efc84a;
+}
+
+.btn-red:hover {
+    background: #e74246;
+}
+
+.btn-green:hover {
+    background: #00bc6c;
+}
+
+.btn-yellow:hover {
+    background: #eab534;
 }
 
 .element1,
@@ -599,19 +619,24 @@ ul.percent li .level {
 
 .index-content-title {
     display: inline-block;
-    margin-bottom: 80px;
+    margin-bottom: 58px;
     font-size: 18px;
     line-height: 18px;
 }
 
-.index-content-select li {
+.index-content-select a {
     display: inline-block;
     margin-right: 8px;
     padding-right: 10px;
+    text-decoration: none;
+    color: #e7e7e7;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
 }
 
-.index-content-select .gray {
-    color: #d2d2d2;
+.index-content-select a:hover {
+    color: #cfcfcf;
 }
 
 .index-content-select {
@@ -622,22 +647,27 @@ ul.percent li .level {
 
 .sorting span {
     float: left;
-    margin-bottom: 80px;
+    margin-bottom: 58px;
     margin-right: 270px;
-    padding-left: 100px;
+    padding-left: 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
+    padding-left: 0;
+}
+
+.gray.active{
+    color: #aaaaaa;
 }
 
 .arrows {
     float: left;
-    margin-right: 15px;
+    margin-right: 0;
 }
 
 .arrow {
     float: left;
-    margin-left: 20px;
+    margin-left: 15px;
     font-size: 0;
     display: block;
     width: 15px;
@@ -667,12 +697,16 @@ ul.percent li .level {
     margin: 0 40px 40px 0;
 }
 
-.card:nth-child(2n+2) {
+.card:nth-child(2n+3) {
     margin-right: 0;
 }
 
 .card:hover .card-content {
     display: block;
+}
+
+.card:hover .card-head{
+    background-color: #4d4d4d;
 }
 
 .card-content {
@@ -704,6 +738,10 @@ ul.percent li .level {
     background: #fb565a;
 }
 
+.card-content .btn:hover{
+    background-color: #e74246;
+}
+
 .card-head {
     font-size: 0;
     background-color: #eeeeee;
@@ -716,8 +754,8 @@ ul.percent li .level {
 
 .card-head li {
     display: inline-block;
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
     margin: 0 4px;
     background: #ffffff;
     border: 4px solid #ffffff;
@@ -765,6 +803,10 @@ ul.percent li .level {
     text-decoration: none;
     border-radius: 3px;
     background: #eeeeee;
+}
+
+.show a:hover {
+    background-color: #dfdfdf;
 }
 
 .pagination .btn2,
@@ -816,6 +858,16 @@ ul.percent li .level {
     background: #eeeeee;
     border: 3px solid #eeeeee;
 }
+
+.pagination li:hover {
+    background: #dfdfdf;
+   /* border: #dfdfdf;*/
+}
+
+.pagination a:hover {
+    background: #dfdfdf;
+   /* border: #dfdfdf;*/
+}
 /*КОНЕЦ КАТАЛОГА*/
 
 /*футер*/
@@ -835,8 +887,8 @@ ul.percent li .level {
     position: relative;
     display: block;
     width: 220px;
-    padding: 20px 0px;
-    margin-top: 35px;
+    padding: 15px 0px;
+    margin-top: 40px;
     margin-bottom: 5px;
     font-size: 16px;
     color: #ffffff;
@@ -872,6 +924,7 @@ ul.percent li .level {
 
 .main-footer {
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .index-content-title-map {
@@ -879,6 +932,7 @@ ul.percent li .level {
     margin-bottom:10px;
     font-size: 18px;
     line-height: 18px;
+    font-weight: 400;
 }
 
 strong {
@@ -916,8 +970,8 @@ strong {
     background: #e1e1e1 no-repeat center;
 }
 
-.social-btn:hover {
-    background-color: #e1e1e1;
+.footer-social a:hover{
+    background-color: #e74246;
 }
 
 .social-btn-vk {
@@ -934,7 +988,8 @@ strong {
 
 
 /*sprites*/
-/*.sprite {
+/*
+.sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;

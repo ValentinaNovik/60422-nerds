@@ -7,10 +7,10 @@
           <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <header class="main-header">
-        <div class="container clearfix"> <!--ОСН БЛОК ХЕДЕР МЕНЮ-->
-            <a class="main-logo" href="#"><img src="img/logo.png" width="161" height="65" alt="nёrd's"></a><!--БЛОК 1-->
-            <nav class="menu"> <!--БЛОК 2-->
+        <header class="main-header-inner">
+        <div class="container clearfix">
+            <a class="main-logo" href="..index.html"><img src="img/logo.png" width="161" height="65" alt="nёrd's"></a>
+            <nav class="menu">
                 <ul>
                 <li class="menu-item">
                     <a href="#">Студия</a>
@@ -26,14 +26,14 @@
                 </li>
                 </ul>
             </nav>
-        <div class="menu-item menu-caddy"> <!--БЛОК 3-->
+        <div class="menu-item menu-caddy">
 <!--<img src="img/basket-icon.png" width="15" height="15" alt="basket">-->
             <a class="login" href="#">Корзина</a>
         </div>
         </div>
         <div class="page-title container">
             <div class="page-title"> 
-                Магазин готовых шаблонов
+                <span>Магазин готовых шаблонов</span>
             </div>
         </div>
         </header>
@@ -50,8 +50,8 @@
                         <div class="toggle toggle-max"></div>
                       </div>
                       <div class="price-controls">
-                        <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                        <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                        <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                        <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
                       </div>
                   </div>
                   <span class="index-content-title">СЕТКА:</span>
@@ -85,19 +85,19 @@
                   </div>
               </form>
             </div>
-                  <div class="sorting">
-                    <span>СОРТИРОВАТЬ:</span>
-                         <ul class="index-content-select">
-                        <li>по цене</li>
-                        <li class="gray">по типу</li>
-                        <li class="gray">по названию</li>
-                        </ul>
+                  <div class="index-content-right">
+                      <div class="sorting">
+                      <span>СОРТИРОВАТЬ:</span>
+                        <div class="index-content-select">
+                        <a class="gray active" href="#">по цене</a>
+                        <a class="gray" href="#">по типу</a>
+                        <a class="gray" href="#">по названию</a>
+                        </div>
                         <div class="arrows">
                         <a class="arrow-up arrow" href="#">вверх</a>
                         <a class="arrow-down arrow" href="#">вниз</a>
                         </div>
                   </div>
-                  <div class="index-content-right">
                     <div class="card">
                         <ul class="card-head">
                         <li></li>
