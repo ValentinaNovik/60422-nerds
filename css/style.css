@@ -10,8 +10,8 @@ body {
     color: #000000;
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 400;
-    font-size:16px;
-    line-height:18px;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 /*@font-face {
@@ -42,14 +42,13 @@ body {
 
 header{
     background-color: #eeeeee;
-    min-height: 545px;
     margin-bottom: 60px;
+    min-height: 545px;
 }
 
 .container {
     width: 1160px;
     margin: 0 auto;
-    margin-bottom: 45px;
     padding: 0 20px;
 }
 
@@ -90,11 +89,11 @@ header{
     line-height: 28px;
 }
 
-.menu-item a{
+.menu-item a {
     text-transform: uppercase;
 }
 
-.menu-item .active a{
+.menu-item .active a {
     border-bottom: 20px;
 }
 
@@ -115,14 +114,14 @@ header{
     padding-left: 40px;
   }
 
-.menu-item ul{
+.menu-item ul {
     margin: 0;
     padding: 0;
     list-style: none;
     font-size: 0;
 }
 
-.menu-item li{
+.menu-item li {
     display: inline-block;
 /*  vertical-aline: top;*/
     font-size: 16px;
@@ -137,16 +136,19 @@ header{
     color: #000000;
 }
 
-/*.features-item b, p{
-    background-color: #eeeeee;
-}*/
-
-.page-title {
+.page-title containerc{
     padding-left: 50px;
+    padding-bottom: 0;
+    width: 1160px;
+    height: 310px;
 }
 
-.page-title h1 {
+.page-title {
     font-size: 55px;
+    line-height: 55px;
+    padding-left: 40px;
+    text-align: center;
+    margin-top: 75px;
 }
 
 .features-item {
@@ -167,7 +169,6 @@ header{
     padding-right: 20px;
     padding-left: 20px;
     margin-bottom: 15px;
-    border-radius: 5px;
     background: #f1f1f1;
 }
 
@@ -180,6 +181,8 @@ header{
     width: 70%;
     height: 2px;
     background: #00ca74;
+    margin-left: 0%;
+    
 }
 
 .range-controls .toggle {
@@ -232,108 +235,108 @@ header{
 }
 /*конец бегунка*/
 /*слайдер*/
-.slider{
-    position:relative;
-    width:1160px;
-    height:310px;
-    margin:0 auto;
+.slider {
+    position: relative;
+    width: 1160px;
+    height: 310px;
+    margin: 0 auto;
 }
 
-.slider-controls{
-    position:absolute;
-    bottom:95px;
-    left:50%;
-    width:200px;
-    height:10px;
-    margin-left:-100px;
-    text-align:center;
-    z-index:1000;
+.slider-controls {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 10px;
+    margin-left: -100px;
+    text-align: center;
+    z-index: 1000;
 }
-.slider-controls i{
-    display:inline-block;
-    width:4px;
-    height:4px;
-    margin:0 3px;
-    background:white;
-    border:3px solid white;
-    vertical-align:top;
-    border-radius:50%;
-    cursor:pointer;
+.slider-controls i {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 8px;
+    background: white;
+    border: 7px solid white;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.slider-controls .active{
-    background:#c1c1c1;
+.slider-controls .active {
+    background: #c1c1c1;
 }
 .slide{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    overflow:hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     display: none;
-    padding-bottom: 30px;
+    padding-bottom: 115px;
 }
 
-.slide.active{
+.slide.active {
     display: block;
 }
-.slide-text{
+.slide-text {
     float: left;
-    width:380px;
-    padding:30px 0;
-    color:#000000;
+    width: 380px;
+    padding: 75px 0;
+    color: #000000;
     background-color: #eeeeee;
     margin-right: 80px;
 }
-.slide-title{
-    font-size:55px;
+.slide-title {
+    font-size: 55px;
     line-height: 55px;
-    line-height:1;
-    font-weight:400;
-    color:#000000;
+    line-height: 1;
+    font-weight: 400;
+    color: #000000;
     background-color: #eeeeee;
     margin-bottom: 25px;
 }
 
-.slide-title p{
-    font-size:16px;
-    line-height:18px;
+.slide-title p {
+    font-size: 16px;
+    line-height: 18px;
 }
 
-.slide p{
+.slide p {
     background-color: #eeeeee;
     margin-bottom: 40px;
 }
 
-.slide .btn{
-    display:block;
-    width:240px;
-    padding:15px 0;
-    margin-top:25px;
-    font-size:16px;
-    line-height:18px;
-    color:white;
-    text-transform:uppercase;
-    text-align:center;
-    text-decoration:none;
-    background:#fb565a;
-    border-radius:3px;
+.slide .btn {
+    display: block;
+    width: 240px;
+    padding: 15px 0;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background: #fb565a;
+    border-radius: 3px;
 }
 
-.slide:nth-child(1){
-    background-image:url("../img/mobiles-head.png");
-    background-repeat:no-repeat;
-    background-position:100% 10px;
+.slide:nth-child(1) {
+    background-image: url("../img/mobiles-head.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
 }
 
-.slide:nth-child(1){
-    display:block;
+.slide:nth-child(1) {
+    display: block;
 }
 /*конец слайдера*/
 
 /*ГЛАВНАЯ*/
-.elements{
+.elements {
     display: block;
     margin-top: 80px;
     padding-bottom: 88px;
@@ -346,11 +349,11 @@ header{
     margin-right: 40px;
 }
 
-.elements-item span{
+.elements-item span {
     text-transform: uppercase;
     font-weight: 400;
-    font-size:24px;
-    line-height:30px;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .elements-item:last-child {
@@ -362,7 +365,7 @@ header{
 }
 
 .about{
-    padding-bottom: 58px;
+    padding-bottom: 48px;
     border-bottom: 1px solid #eeeeee;
 }
 .about-left {
@@ -372,52 +375,46 @@ header{
 }
 
 
-.about-left .task{
-    text-align:left;
+.about-left .task {
+    text-align: left;
     text-transform: uppercase;
-    font-size:16px;
-    line-height:24px;
-    margin-bottom: 50px;
-}
-
-.about-left p{
-    margin-bottom: 50px;
-}
-
-.about-left span{
-    text-align:left;
-    font-weight: 400;
-    font-size:45px;
-    line-height:45px;
-    margin-bottom: 60px;
-}
-
-/*.elements-item span{
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size:24px;
-    line-height:30px;
-}*/
-
-.about-left li{
-    position: relative;
-    text-align:left;
-    font-size:16px;
-    line-height:24px;
+    font-size: 16px;
+    line-height: 24px;
     margin-bottom: 25px;
-    list-style-type:square;
+}
+
+.about-left p {
+    margin-bottom: 37px;
+}
+
+.about-left span {
+    display: block;
+    text-align: left;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+
+.about-left li {
+    position: relative;
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+    list-style-type: square;
     text-decoration: none;
     list-style: none;
 }
 
-.about-left li::before{
+.about-left li::before {
     content: "";
     position: absolute;
     width: 25px;
     height: 2px;
     background-color: #e50000;
     top: 10px;
-    left:-40px;
+    left: -40px;
 }
 
 .about-right {
@@ -426,49 +423,54 @@ header{
     width: 460px;
     margin-right: 0;
 }
-.about-right b{
+.about-right b {
     text-transform: uppercase;
     margin-left: 100px;
     padding-left: 20px;
     font-size: 16px;
     line-height: 24px;
+    font-weight: 100;
     left:0;
 }
 
-.about-right li{
+.about-right li {
     vertical-align: center;
-    font-size:16px;
-    line-height:18px;
-    margin-top: 40px;
-    margin-right: 15px;
-    margin-left: 20px;
-    left:0;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 25px;
+    margin-right: 0;
+    margin-left: 15px;
+    left: 0;
 }
 
 ul .percent {
     list-style: none;
-    margin: :0;
+    margin: 0;
     padding: 0;
     font-size: 0;
     text-align: right;
     margin: 50px 30px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 ul.percent li {
     font-size: 45px;
-    line-height:10,06px;
+    line-height: 10,06px;
     display: inline-block;
     vertical-align: top;
     width: 100px;
 }
 
-ul.percent li .level{
+ul.percent li .level {
     font-size: 16px;
-    line-height:18px;
+    line-height: 18px;
     display: inline-block;
     vertical-align: top;
     width: 100px;
+}
+
+.percent sup {
+    font-size: 25px;
 }
 
 .percent span:nth-child(1) {
@@ -476,20 +478,20 @@ ul.percent li .level{
     margin-bottom: 30px;
 }
 
-.features-name{
+.features-name {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.partners{
+.partners {
     padding-bottom: 43px;
     padding-top: 50px;
     border-bottom: 1px solid #eeeeee;
 }
 
 .partners-item {
-    display:inline-block;
-    width:auto;
+    display: inline-block;
+    width: auto;
     margin-right: 60px;
     padding-left: 35px;
     vertical-align: middle;
@@ -499,38 +501,41 @@ ul.percent li .level{
     margin-right: 0;
 }
 
-.elements-item .btn{
-    display:block;
-    width:112px;
-    padding:16px 25px;
-    margin-top:32px;
-    font-size:16px;
+.btn {
+    display: block;
+    width: 112px;
+    padding: 16px 25px;
+    margin-top: 32px;
+    font-size: 16px;
     line-height: 18px;
-    color:#ffffff;
-    text-transform:uppercase;
-    text-align:center;
-    text-decoration:none;
-    background:#fb565a;
-    border-radius:3px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background: #fb565a;
+    border-radius: 3px;
 }
-.element1 .btn{
+
+.btn-red {
     background: #fb565a;
 }
-.element2 .btn{
-    background: #fb565a;
+
+.btn-green {
+    background: #00ca74;
 }
-.element3 .btn{
+
+.btn-yellow {
     background: #efc84a;
 }
 
 .element1,
 .element2,
-.element3{
+.element3 {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.likes{
+.likes {
     display: block;
     text-align: right;
     margin-bottom: 30px;
@@ -546,6 +551,45 @@ ul.percent li .level{
     width: 260px;
     margin-left: 40px;
 }
+/*  спрайты  */
+/*.input[type="checkbox"]{
+    display: none;
+}
+
+.input[type="checkbox"] + label{
+    display: block;
+    margin: 10px 0;
+    line-height: 20px;
+    padding-left: 45px;
+    position: relative;
+    cursor: pointer;
+}
+
+.input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #b8b8b8;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.input[type="checkbox"]:checked + label::after {
+    content: ""; 
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-image: url("../img/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 23px;
+    background-position: -5px -38px;
+}
+
+*/
 
 .index-content-right {
     float: right;
@@ -555,18 +599,18 @@ ul.percent li .level{
 
 .index-content-title {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     font-size: 18px;
     line-height: 18px;
 }
 
-.index-content-select li{
+.index-content-select li {
     display: inline-block;
     margin-right: 8px;
     padding-right: 10px;
 }
 
-.index-content-select .gray{
+.index-content-select .gray {
     color: #d2d2d2;
 }
 
@@ -576,7 +620,7 @@ ul.percent li .level{
     padding: 0;
 }
 
-.sorting span{
+.sorting span {
     float: left;
     margin-bottom: 80px;
     margin-right: 270px;
@@ -586,12 +630,12 @@ ul.percent li .level{
     line-height: 18px;
 }
 
-.arrows{
+.arrows {
     float: left;
     margin-right: 15px;
 }
 
-.arrow{
+.arrow {
     float: left;
     margin-left: 20px;
     font-size: 0;
@@ -603,7 +647,7 @@ ul.percent li .level{
     background-position: 3px center;
 }
 
-.arrow-down{
+.arrow-down {
     background-image: url("../img/sort-up.png");
 }
 
@@ -613,16 +657,6 @@ ul.percent li .level{
     font-size: 16px;
     line-height: 20px;
 }
-
-/*.products-item {
-    margin-right: 4px;
-    padding-left: 8px;
-    vertical-align: middle;
-}
-
-.products-item label{
-    margin-bottom: 10px;
-}                                       отступы между строк в левом блоке*/
 
 .card {
     position: relative;
@@ -637,11 +671,11 @@ ul.percent li .level{
     margin-right: 0;
 }
 
-.card:hover .card-content{
+.card:hover .card-content {
     display: block;
 }
 
-.card-content{
+.card-content {
     position: absolute;
     display: none;
     left: 0;
@@ -656,61 +690,62 @@ ul.percent li .level{
 }
 
 .card-content .btn {
-    display:block;
+    display: block;
     width: 160px;
     padding: 18px;
-    margin-top:15px;
+    margin-top: 15px;
     margin-bottom: 20px;
-    font-size:16px;
+    font-size: 16px;
     color: #ffffff;
-    text-transform:uppercase;
-    text-align:center;
-    text-decoration:none;
-    border-radius:3px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
     background: #fb565a;
 }
 
-.card-head{
+.card-head {
     font-size: 0;
     background-color: #eeeeee;
     padding-top: 10px;
     padding-bottom: 10px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    padding-left: 15px;
 }
 
-.card-head li{
-    display:inline-block;
-    width:10px;
-    height:10px;
-    margin:0 4px;
-    background:white;
-    border:4px solid white;
-    vertical-align:top;
-    border-radius:50%;
-    cursor:pointer;
-    text-decoration:none;
+.card-head li {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 4px;
+    background: #ffffff;
+    border: 4px solid #ffffff;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.card-name p{
+.card-name p {
     background-color: #eeeeee;
     color: #aeaeae;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.pagination{
+.pagination {
     margin: 0;
     padding: 0;
 }
 
-.pagination li{
+.pagination li {
     display: inline;
     width: 440px;
     margin: auto;
     vertical-align: top;
 }
-.pagination a{
+.pagination a {
     text-decoration: none;
     list-style: none;
     color: #000000;
@@ -719,101 +754,101 @@ ul.percent li .level{
 }
 
 .show .btn {
-    display:block;
-    width:270px;
-    padding:10px 0;
-    margin-top:48px;
-    font-size:16px;
-    color:#000000;
-    text-transform:uppercase;
-    text-align:center;
-    text-decoration:none;
-    border-radius:3px;
+    display: block;
+    width: 270px;
+    padding: 10px 0;
+    margin-top: 48px;
+    font-size: 16px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
     background: #eeeeee;
 }
 
 .pagination .btn2,
 .pagination .btn3 {
     display: inline-block;
-    width:50px;
-    padding:20px 10px;
-    margin-top:60px;
+    width: 50px;
+    padding: 20px 10px;
+    margin-top: 60px;
     margin-right: 15px;
-    margin-bottom:60px;
-    font-size:16px;
+    margin-bottom: 60px;
+    font-size: 16px;
     color: #000000;
-    text-transform:uppercase;
-    text-align:center;
-    text-decoration:none;
-    border-radius:3px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
     background: #eeeeee;
     border: 3px solid #eeeeee;
 }
-.pagination .btn1{
+.pagination .btn1 {
    display: inline-block;
-    width:50px;
-    padding:20px 10px;
-    margin-top:60px;
+    width: 50px;
+    padding: 20px 10px;
+    margin-top: 60px;
     margin-right: 15px;
-    margin-bottom:60px;
-    font-size:16px;
+    margin-bottom: 60px;
+    font-size: 16px;
     color: #000000;
-    text-transform:uppercase;
-    text-align:center;
-    text-decoration:none;
-    border-radius:3px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
     border: 3px solid #eeeeee;
     background: #ffffff;
 }
-.pagination .btn4{
+.pagination .btn4 {
     display: inline-block;
-    width:260px;
-    padding:20px 10px;
-    margin-top:60px;
+    width: 260px;
+    padding: 20px 10px;
+    margin-top: 60px;
     margin-right: 85px;
-    margin-bottom:60px;
-    font-size:16px;
-    color:black;
-    text-transform:uppercase;
-    text-align:center;
-    text-decoration:none;
-    border-radius:3px;
+    margin-bottom: 60px;
+    font-size: 16px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
     background: #eeeeee;
     border: 3px solid #eeeeee;
 }
 /*КОНЕЦ КАТАЛОГА*/
 
 /*футер*/
-.map{
+.map {
     position: relative;
     margin-top: 83px;
     width: 100%;
     text-align: center;
 }
 
-. map-canvas{
+. map-canvas {
     background-color: #eeeeee;
-    text-align:center;
+    text-align: center;
 }
 
 .letter .btn {
     position: relative;
-    display:block;
-    width:220px;
-    padding:20px 0px;
-    margin-top:40px;
-    margin-bottom:45px;
-    font-size:16px;
-    color:white;
-    text-transform:uppercase;
-    text-align:center;
-    text-decoration:none;
-    border-radius:3px;
+    display: block;
+    width: 220px;
+    padding: 20px 0px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
     background: #fb565a;
 }
 
 .map-content {
-    width: 280px;
+    width: 270px;
     height: 280px;
     text-align: left;
     position: absolute;
@@ -839,7 +874,14 @@ ul.percent li .level{
     padding-top: 50px;
 }
 
-strong{
+.index-content-title-map {
+    display: inline-block;
+    margin-bottom:10px;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+strong {
     font-size: 36px;
     line-height: 36px;
 }
@@ -890,27 +932,199 @@ strong{
     background: #e1e1e1 url("../img/insta-icon.png") no-repeat center;
 }
 
+
+/*sprites*/
+/*.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-checkbox-off {
+    width: 23px;
+    height: 23px;
+    background-position: -5px -5px;
+}
+
+.sprite-checkbox-on {
+    width: 27px;
+    height: 23px;
+    background-position: -5px -38px;
+}
+
+.sprite-close {
+    width: 26px;
+    height: 26px;
+    background-position: -5px -71px;
+}
+
+.sprite-radio-off {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -107px;
+}
+
+.sprite-radio-on {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -142px;
+}
+*/
+
 /*ОБЩЕЕ*/
 b {
     color: #000000;
     font-family: "Roboto", "Arial", sans-serif;
-    font-size:24px;
-    line-height:30px;
+    font-size: 24px;
+    line-height: 30px;
     margin-bottom: 25px;
 }
 
 p {
     color: #000000;
     font-family: "Roboto", "Arial", sans-serif;
-    font-size:16px;
-    line-height:24px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
-h1{
+h1 {
     float:left;
     margin-left: 200px;
     margin-right: 200px;
-    font-size:55px;
+    font-size: 55px;
     line-height: 24px;
-    line-height:55px;
+    line-height: 55px;
 }
+
+/*всплывающая форма*/
+
+
+/*.modal-content {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 275px;
+    width: 470px;
+    height: 315px;
+    padding: 50px 80px;
+    background: #fff;
+    box-shadow: 0px 20px 80px 0px rgba(0,0,0,1);
+}
+
+.modal-content-show {
+    display: block;
+}
+
+.modal-content label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.modal-content input {
+    display: inline-block;
+    width: 190px;
+    padding: 8px 13px;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+    outline: none;
+}
+
+.modal-content input:hover {
+    border-color: #a2a9ac;
+    outline: none;
+}
+
+.modal-content input:active {
+    border-color: #56bffb;
+    outline: none;
+}
+
+.modal-content-name {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 17px;
+}
+
+.modal-content-email {
+    float: left;
+    width: 220px;
+    margin-bottom: 17px;
+}
+
+.modal-content-text input{
+    width: 430px;
+    padding-bottom: 85px;
+    margin-bottom: 45px;
+}
+
+.modal-content-send {
+    display: block;
+    padding: 9px 194px;
+    font-size: 12px;
+    line-height: 18px; 
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background: #fb565a;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.modal-content-send:hover {
+    background-color: #d6494d;
+}
+
+.modal-content-send:active {
+    background-color: #b63538;
+    box-shadow: 0px -3px 0px 0px rgba(155,45,48,1);
+}
+
+
+.modal-content-close {
+    position: absolute;
+    top: 6px;
+    left: 583px;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    background-color: #fb565a;
+    border: none;
+    border-radius: 50%;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+    position: absolute;
+    content: '';
+    top: 18px;
+    left: 8px;
+    width: 25px;
+    height: 5px;
+    background: #fff;
+}
+
+.modal-content-close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+*/
+
+
+
+
+
+
+
+
