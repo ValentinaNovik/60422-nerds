@@ -93,7 +93,7 @@ header{
     padding-left: 20px;
 }
 
-.menu-caddy::before {
+.menu-caddy:: before {
     position: absolute;
     content: '';
     width: 20px;
@@ -168,7 +168,7 @@ header{
     padding-top: 39px;
     padding-right: 20px;
     padding-left: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     background: #f1f1f1;
 }
 
@@ -208,11 +208,12 @@ header{
 
 .price-controls {
     font-size: 0;
-    margin-bottom: 140px;
+    margin-bottom: 60px;
 }
 
 .price-controls label {
     font-size: 16px;
+    text-transform: uppercase;
     display: inline-block;
     width: 50%;
 }
@@ -226,7 +227,7 @@ header{
     font-size: 16px;
     width: 50px;
     margin-left: 10px;
-    padding: 8px 20px;
+    padding: 8px 16px;
     text-align: center;
     color: #283136;
     border: none;
@@ -438,14 +439,16 @@ header{
     left:0;
 }
 
+
 .about-right li {
     vertical-align: center;
     font-size: 16px;
     line-height: 18px;
     margin-top: 25px;
     margin-right: 0;
-    margin-left: 15px;
     left: 0;
+    padding: 0;
+    margin-left: 15px;
 }
 
 ul .percent {
@@ -453,7 +456,7 @@ ul .percent {
     margin: 0;
     padding: 0;
     font-size: 0;
-    text-align: right;
+    text-align: center;
     margin: 50px 30px;
     margin-top: 26px;
 }
@@ -569,7 +572,7 @@ ul.percent li .level {
 .index-content-left {
     float: left;
     width: 260px;
-    margin-left: 40px;
+    margin-left: 0;
 }
 /*  спрайты  */
 /*.input[type="checkbox"]{
@@ -624,6 +627,13 @@ ul.percent li .level {
     line-height: 18px;
 }
 
+.index-content-title-element {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 18px;
+}
+
 .index-content-select a {
     display: inline-block;
     margin-right: 8px;
@@ -667,7 +677,6 @@ ul.percent li .level {
 
 .arrow {
     float: left;
-    margin-left: 15px;
     font-size: 0;
     display: block;
     width: 15px;
@@ -679,13 +688,22 @@ ul.percent li .level {
 
 .arrow-down {
     background-image: url("../img/sort-up.png");
+    margin-left: 13px;
+}
+
+.arrow-up {
+    margin-left: 40px;
 }
 
 .producers-item {
-    margin-bottom: 50px;
+    margin-bottom: 37px;
     vertical-align: middle;
     font-size: 16px;
-    line-height: 20px;
+    line-height:40px;
+}
+
+.points{
+    margin-bottom: 10px;
 }
 
 .card {
@@ -694,7 +712,7 @@ ul.percent li .level {
     width: 360px;
     display: inline-block;
     vertical-align: top;
-    margin: 0 40px 40px 0;
+    margin: 0 40px 35px 0;
 }
 
 .card:nth-child(2n+3) {
@@ -718,13 +736,13 @@ ul.percent li .level {
     padding-top: 25px;
     padding-bottom: 25px;
     text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 55px;
+    padding-right: 55px;
     background-color: #eeeeee;
 }
 
 .card-content .btn {
-    display: block;
+    display: inline-block;
     width: 160px;
     padding: 18px;
     margin-top: 15px;
@@ -765,11 +783,20 @@ ul.percent li .level {
     text-decoration: none;
 }
 
+.card-name{
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
 .card-name p {
     background-color: #eeeeee;
     color: #aeaeae;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .pagination {
@@ -793,9 +820,10 @@ ul.percent li .level {
 
 .show .btn {
     display: block;
-    width: 270px;
+    width: 260px;
+    height: 25px;
     padding: 10px 0;
-    margin-top: 48px;
+    margin-top: 41px;
     font-size: 16px;
     color: #000000;
     text-transform: uppercase;
@@ -812,11 +840,11 @@ ul.percent li .level {
 .pagination .btn2,
 .pagination .btn3 {
     display: inline-block;
-    width: 50px;
-    padding: 20px 10px;
-    margin-top: 60px;
+    width: 45px;
+    padding: 13px 0px;
+    margin-top: 30px;
     margin-right: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
     font-size: 16px;
     color: #000000;
     text-transform: uppercase;
@@ -828,11 +856,11 @@ ul.percent li .level {
 }
 .pagination .btn1 {
    display: inline-block;
-    width: 50px;
-    padding: 20px 10px;
-    margin-top: 60px;
+    width: 45px;
+    padding: 13px 0px;
+    margin-top: 30px;
     margin-right: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
     font-size: 16px;
     color: #000000;
     text-transform: uppercase;
@@ -844,11 +872,11 @@ ul.percent li .level {
 }
 .pagination .btn4 {
     display: inline-block;
-    width: 260px;
-    padding: 20px 10px;
-    margin-top: 60px;
+    width: 225px;
+    padding: 13px 10px;
+    margin-top: 30px;
     margin-right: 85px;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
     font-size: 16px;
     color: #000000;
     text-transform: uppercase;
@@ -861,19 +889,18 @@ ul.percent li .level {
 
 .pagination li:hover {
     background: #dfdfdf;
-   /* border: #dfdfdf;*/
+    border: 3px solid #dfdfdf;
 }
 
 .pagination a:hover {
     background: #dfdfdf;
-   /* border: #dfdfdf;*/
 }
 /*КОНЕЦ КАТАЛОГА*/
 
 /*футер*/
 .map {
     position: relative;
-    margin-top: 83px;
+    margin-top: 45px;
     width: 100%;
     text-align: center;
 }
