@@ -785,8 +785,8 @@ ul.percent li .level {
 .show .btn {
     display: block;
     width: 260px;
-    height: 25px;
-    padding: 10px 0;
+    height: 20px;
+    padding: 15px 0;
     margin-top: 41px;
     font-size: 16px;
     color: #000000;
@@ -891,12 +891,12 @@ ul.percent li .level {
 }
 
 .letter .btn:hover {
-     background: e74246;
+     background: #e74246;
 }
 
 .map-content {
     width: 270px;
-    height: 280px;
+    height: 265px;
     text-align: left;
     position: absolute;
     background-color: #ffffff;
@@ -1009,35 +1009,34 @@ h1 {
 /*всплывающая форма*/
 
 .modal-content {
-    display: none;
-    position: absolute;
-    display: none;
+    display: block;
+    position: fixed;
     top: 150px;
     left: 230px;
-    margin-left: 170px;
+    margin-left: 100px;
     background-color: #ffffff;
     transform: translate(-50px, -50px);
-    padding: 50px 80px;
+    padding: 65px 50px 30px 100px;
     display: inline-block;
-    width: 800px;
-    height: 530px;
+    width: 810px;
+    height: 490px;
     box-shadow: 0px 20px 80px 0px rgba(0,0,0,1);
 }
 
 .modal-content-show {
-    display: block;
+    display: none;
     text-align: left;
-    font-weight: 200;
+    font-weight: 150;
     font-size: 45px;
-    line-height: 45px;
+    line-height: 50px;
     margin-bottom: 10px;
-    margin-left: 0;
-    font-weight: 500;
+    margin-left: 10px;
+    font-weight: 400;
 }
 
 .modal-content label {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 18px;
 }
@@ -1045,7 +1044,7 @@ h1 {
 .modal-content input {
     display: inline-block;
     width: 350px;
-    padding: 10px 15px;
+    padding: 12px 5px;
     font-size: 16px;
     line-height: 18px;
     border: 2px solid #c8c8c8;
@@ -1069,16 +1068,16 @@ h1 {
 .modal-content textarea {
     font-family: "Roboto", "Arial", sans-serif;
     display: block;
-    width: 770px;
-    height: 150px;
-    padding: 8px 13px;
+    width: 730px;
+    height: 100px;
+    padding: 10px 10px;
     font-size: 16px;
     line-height: 18px;
     border: 2px solid #c8c8c8;
     border-radius: 3px;
     outline: none;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .modal-content textarea:hover {
@@ -1094,7 +1093,7 @@ h1 {
 .modal-content-name {
     float: left;
     width: 390px;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-bottom: 17px;
 }
 
@@ -1108,12 +1107,12 @@ h1 {
     float: left;
     display: block
     width: 600px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .modal-content-send {
     display: block;
-    padding: 18px 80px;
+    padding: 15px 83px;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1131,8 +1130,8 @@ h1 {
 
 .modal-content-close {
     position: absolute;
-    top: 55px;
-    left: 830px;
+    top: 65px;
+    left: 840px;
     width: 40px;
     height: 40px;
     font-size: 0;
