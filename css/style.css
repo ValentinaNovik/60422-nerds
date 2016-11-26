@@ -23,7 +23,7 @@ body {
 
 /*ХЭДЭР С МЕНЮ*/
 
-header{
+header {
     background-color: #eeeeee;
     margin-bottom: 60px;
     min-height: 545px;
@@ -90,10 +90,10 @@ header{
 
 .menu-caddy {
     padding-top: 15px;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
-.menu-caddy:: before {
+.menu-caddy::before {
     position: absolute;
     content: '';
     width: 20px;
@@ -182,7 +182,6 @@ header{
     height: 2px;
     background: #00ca74;
     margin-left: 0%;
-    
 }
 
 .range-controls .toggle {
@@ -236,6 +235,7 @@ header{
 }
 /*конец бегунка*/
 /*слайдер*/
+
 .slider {
     position: relative;
     width: 1160px;
@@ -426,13 +426,13 @@ header{
 .about-right {
     margin-top: 35px;
     float: right;
-    width: 460px;
+    width: 440px;
     margin-right: 0;
 }
 .about-right b {
     text-transform: uppercase;
     margin-left: 100px;
-    padding-left: 20px;
+    padding-left: 15px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 100;
@@ -459,16 +459,18 @@ ul .percent {
     text-align: center;
     margin: 50px 30px;
     margin-top: 26px;
+    padding-left: 15px;
 }
 
 ul.percent li {
     text-align: left;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 17px;
     display: inline-block;
     vertical-align: top;
-    width: 110px;
-    margin-right: 10px;
+    width: 75px;
+    margin-right: 0;
+    padding-left: 25px;
     margin-top: 25px;
 }
 
@@ -498,6 +500,7 @@ ul.percent li .level {
     padding-bottom: 43px;
     padding-top: 48px;
     border-bottom: 1px solid #eeeeee;
+    margin-bottom: 85px;
 }
 
 .partners-item {
@@ -574,45 +577,6 @@ ul.percent li .level {
     width: 260px;
     margin-left: 0;
 }
-/*  спрайты  */
-/*.input[type="checkbox"]{
-    display: none;
-}
-
-.input[type="checkbox"] + label{
-    display: block;
-    margin: 10px 0;
-    line-height: 20px;
-    padding-left: 45px;
-    position: relative;
-    cursor: pointer;
-}
-
-.input[type="checkbox"] + label::before {
-    content: "";
-    display: block;
-    width: 16px;
-    height: 16px;
-    border: 2px solid #b8b8b8;
-    background-color: #ffffff;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.input[type="checkbox"]:checked + label::after {
-    content: ""; 
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    background-image: url("../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 27px;
-    height: 23px;
-    background-position: -5px -38px;
-}
-
-*/
 
 .index-content-right {
     float: right;
@@ -666,7 +630,7 @@ ul.percent li .level {
     padding-left: 0;
 }
 
-.gray.active{
+.gray.active {
     color: #aaaaaa;
 }
 
@@ -702,7 +666,7 @@ ul.percent li .level {
     line-height:40px;
 }
 
-.points{
+.points {
     margin-bottom: 10px;
 }
 
@@ -723,7 +687,7 @@ ul.percent li .level {
     display: block;
 }
 
-.card:hover .card-head{
+.card:hover .card-head {
     background-color: #4d4d4d;
 }
 
@@ -756,7 +720,7 @@ ul.percent li .level {
     background: #fb565a;
 }
 
-.card-content .btn:hover{
+.card-content .btn:hover {
     background-color: #e74246;
 }
 
@@ -783,7 +747,7 @@ ul.percent li .level {
     text-decoration: none;
 }
 
-.card-name{
+.card-name {
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
@@ -926,6 +890,10 @@ ul.percent li .level {
     background: #fb565a;
 }
 
+.letter .btn:hover {
+     background: e74246;
+}
+
 .map-content {
     width: 270px;
     height: 280px;
@@ -939,12 +907,12 @@ ul.percent li .level {
     padding-left: 50px;
 }
 
-.map-content b{
+.map-content b {
     font-size: 18px;
     line-height: 30px;
 }
 
-.map-content p{
+.map-content p {
     font-size: 16px;
     line-height: 18px;
 }
@@ -967,7 +935,7 @@ strong {
     line-height: 36px;
 }
 
-.footer-advantages p{
+.footer-advantages p {
     font-size: 16px;
     line-height: 22px;
 }
@@ -1013,46 +981,6 @@ strong {
     background: #e1e1e1 url("../img/insta-icon.png") no-repeat center;
 }
 
-
-/*sprites*/
-/*
-.sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-checkbox-off {
-    width: 23px;
-    height: 23px;
-    background-position: -5px -5px;
-}
-
-.sprite-checkbox-on {
-    width: 27px;
-    height: 23px;
-    background-position: -5px -38px;
-}
-
-.sprite-close {
-    width: 26px;
-    height: 26px;
-    background-position: -5px -71px;
-}
-
-.sprite-radio-off {
-    width: 25px;
-    height: 25px;
-    background-position: -5px -107px;
-}
-
-.sprite-radio-on {
-    width: 25px;
-    height: 25px;
-    background-position: -5px -142px;
-}
-*/
-
 /*ОБЩЕЕ*/
 b {
     color: #000000;
@@ -1080,40 +1008,52 @@ h1 {
 
 /*всплывающая форма*/
 
-
-/*.modal-content {
+.modal-content {
     display: none;
     position: absolute;
-    top: -30px;
-    left: 275px;
-    width: 470px;
-    height: 315px;
+    display: none;
+    top: 150px;
+    left: 230px;
+    margin-left: 170px;
+    background-color: #ffffff;
+    transform: translate(-50px, -50px);
     padding: 50px 80px;
-    background: #fff;
+    display: inline-block;
+    width: 800px;
+    height: 530px;
     box-shadow: 0px 20px 80px 0px rgba(0,0,0,1);
 }
 
 .modal-content-show {
     display: block;
+    text-align: left;
+    font-weight: 200;
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    font-weight: 500;
 }
 
 .modal-content label {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 18px;
 }
 
 .modal-content input {
     display: inline-block;
-    width: 190px;
-    padding: 8px 13px;
-    font-size: 12px;
+    width: 350px;
+    padding: 10px 15px;
+    font-size: 16px;
     line-height: 18px;
-    text-transform: uppercase;
-    border: 2px solid #d7dcde;
+    border: 2px solid #c8c8c8;
     border-radius: 3px;
     outline: none;
+    margin: 0;
+    margin-bottom: 0;
+    font-weight: 400;
 }
 
 .modal-content input:hover {
@@ -1122,34 +1062,60 @@ h1 {
 }
 
 .modal-content input:active {
-    border-color: #56bffb;
+    border-color: #000000;
+    outline: none;
+}
+
+.modal-content textarea {
+    font-family: "Roboto", "Arial", sans-serif;
+    display: block;
+    width: 770px;
+    height: 150px;
+    padding: 8px 13px;
+    font-size: 16px;
+    line-height: 18px;
+    border: 2px solid #c8c8c8;
+    border-radius: 3px;
+    outline: none;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.modal-content textarea:hover {
+    border-color: #a2a9ac;
+    outline: none;
+}
+
+.modal-content textarea:active {
+    border-color: #000000;
     outline: none;
 }
 
 .modal-content-name {
     float: left;
-    width: 220px;
+    width: 390px;
     margin-right: 20px;
     margin-bottom: 17px;
 }
 
 .modal-content-email {
     float: left;
-    width: 220px;
+    width: 390px;
     margin-bottom: 17px;
 }
 
-.modal-content-text input{
-    width: 430px;
-    padding-bottom: 85px;
-    margin-bottom: 45px;
+.modal-content-text {
+    float: left;
+    display: block
+    width: 600px;
+    margin-bottom: 20px;
 }
 
 .modal-content-send {
     display: block;
-    padding: 9px 194px;
-    font-size: 12px;
-    line-height: 18px; 
+    padding: 18px 80px;
+    font-size: 16px;
+    line-height: 18px;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
@@ -1160,23 +1126,17 @@ h1 {
 }
 
 .modal-content-send:hover {
-    background-color: #d6494d;
+    background-color: #e74246;
 }
-
-.modal-content-send:active {
-    background-color: #b63538;
-    box-shadow: 0px -3px 0px 0px rgba(155,45,48,1);
-}
-
 
 .modal-content-close {
     position: absolute;
-    top: 6px;
-    left: 583px;
+    top: 55px;
+    left: 830px;
     width: 40px;
     height: 40px;
     font-size: 0;
-    background-color: #fb565a;
+    background-color: #ffffff;
     border: none;
     border-radius: 50%;
 }
@@ -1189,7 +1149,7 @@ h1 {
     left: 8px;
     width: 25px;
     height: 5px;
-    background: #fff;
+    background: #fecccd;
 }
 
 .modal-content-close::before {
@@ -1201,12 +1161,3 @@ h1 {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-*/
-
-
-
-
-
-
-
-
